@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  color: #eee;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* padding: 15px;
+  margin: 15px; */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+}
+
+nav li:first-child {
+  font-weight: bold;
+}
+
+nav li:last-child {
+  background-color: #33b5e5;
+  /* display: inline-block;*/
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+nav li:last-child:active,
+nav li:last-child:hover {
+  transform: scale(0.98);
+}
+
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: #eee;
+}
+
+header {
+  background: url("car-bg.jpg") no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  background-position: center center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* PSEUDO */
+
+/* CLASSES */
+
+/* .bg {
+} */
+
+.container {
+  max-width: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo i {
+  margin-right: 10px;
+}
+div .text {
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 150px;
+  margin-top: 150px;
+  padding-top: 60px;
+}
+
+.text h1 {
+  font-size: 4rem;
+  color: #33b5e5;
+  margin: 0 15px 25px;
+}
+
+.text h3 {
+  color: white;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.text .btnCustom {
+  display: inline-block;
+  background-color: #33b5e5;
+  color: #eee;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+.text .btnCustom:hover,
+.text .btnCustom:active {
+  transform: scale(0.95);
+}
+
+footer {
+  background-color: black;
+  min-height: 100px;
+}
+
+footer .details {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer div {
+  margin: 15px;
+}
+.details h6 {
+  color: #33b5e5;
+  font-size: 1rem;
+}
+
+.details p {
+  color: #eee;
+}
+
+/* .hidden {
+  display: none;
+} */
+
+@media (max-width: 540px) {
+  header .text {
+    text-align: center;
+  }
+  .text .btnCustom {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .text h1 {
+    font-size: 3.5rem;
+  }
+
+  .text h3 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: none;
+  }
+
+  footer .details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-items: flex-start; */
+
+    text-align: center;
+  }
+  /* .details .phone {
+    justify-self: start;
+  } */
+} ;
